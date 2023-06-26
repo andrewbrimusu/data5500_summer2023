@@ -28,6 +28,7 @@ file = open("/home/ubuntu/environment/data5500_spring2023/week9_graphs/zoomsessi
 
 g = nx.DiGraph()
 
+####################################################
 # STEP 1
 # get all edges from the txt file
 edges = []
@@ -55,6 +56,7 @@ nx.draw_networkx_edge_labels(g,pos,edge_labels=labels)
 plt.savefig("graph.png")
 
 
+####################################################
 # STEP 2
 # for each node pair, find paths between them
 for n1, n2 in permutations(g.nodes,2): #permutations returns all pairs
